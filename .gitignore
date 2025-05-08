@@ -1,62 +1,45 @@
-# Python
+# === Python ===
 __pycache__/
 *.py[cod]
-*.so
-*.egg-info/
-*.egg
 *.pyo
 
-# Virtual environment
-venv/
-env/
-ENV/
-.venv/
+# === Virtual Environment ===
+myenv/
 .env/
-.Python
+.venv/
 
-# Django-related
-*.log
-*.pot
-*.pyc
+# === Django ===
 db.sqlite3
+*.log
 media/
+
+# === Static files (collected or generated) ===
 staticfiles/
 
-# Django Migrations
-**/migrations/*.pyc
+# === Migrations Cache ===
 **/migrations/__pycache__/
-**/migrations/*.py
-!**/migrations/__init__.py  # 初期化ファイルは除外しない（必要）
+**/migrations/*.pyc
+**/migrations/*.pyo
 
-# VSCode
+# Keep __init__.py in migrations
+!**/migrations/__init__.py
+
+# === IDE/Editor Settings ===
 .vscode/
-
-# JetBrains IDEs (PyCharm, etc.)
 .idea/
 
-# OS
+# === OS Files ===
 .DS_Store
 Thumbs.db
 
-# dotenv environment variables
+# === dotenv environment variables ===
 .env
 *.env
 
-# Coverage reports
-htmlcov/
-.coverage
-coverage.xml
-*.cover
-
-# MyPy
-.mypy_cache/
-
-# Pytest
-.pytest_cache/
-
-# Pipenv
-Pipfile.lock
-
-# Other
+# === Test/Debug/Build Artifacts ===
 *.swp
 *.swo
+*.bak
+
+# === Pip Tools ===
+pip-wheel-metadata/
